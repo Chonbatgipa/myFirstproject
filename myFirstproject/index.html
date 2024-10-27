@@ -1,0 +1,90 @@
+<?php
+	session_start();
+  ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" media="screen and (min-width:900px)" href="angStyle.css">
+<link rel="stylesheet" media="screen and (max-width:899px)" href="Hamburger_menu.css">
+<link rel="stylesheet" href="graphics.css">
+
+</head>
+<style>
+	#copyrights{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	text-align:center;
+	margin:auto;
+	background-color:rgba(100,200,200,1);
+	color:#000000;
+	}
+
+</style>
+<body>
+<h1>MITTAPSNI</h1>
+<label class="hamburger-menu">
+		<input type="checkbox"/>
+  </label>
+<div id="navi">
+	<div class="dropdown">
+		<a href="index.html"><span>Home</span></a>
+	</div>
+	<a href="#resources"><div class="dropdown" onmouseover="">
+		<label> Resources
+			</label>
+			<div class="dropdown-content">
+				<a href="sring.html"><div class="item" >Sring</div></a>
+			</div>
+	</div> </a>
+	<div class="dropdown">
+		<a href="about.html"><span>About</span></a>
+	</div>
+ </div>
+ <div class="graphics-dox" onmouseover="">
+	<div class="outter-circle left-eye" ></div>
+	<div class="outter-circle right-eye"></div>
+	<div class="upper-lip"></div>
+	<div class="teeth"></div>
+ </div>
+ <div id="pic-1" class="graphics-dox" onmouseover="">
+	<div class="outter-circle left-eye" ></div>
+	<div class="outter-circle right-eye"></div>
+	<div class="upper-lip"></div>
+	<div class="teeth"></div>
+ </div>
+ <div id="pic-2" class="graphics-dox" onmouseover="">
+	<div class="outter-circle left-eye" ></div>
+	<div class="outter-circle right-eye"></div>
+	<div class="upper-lip"></div>
+	<div class="teeth"></div>
+ </div>
+ <div id="copyrights">Copyright &copy; 2024 by Victor M Sangma. All Rights Reserved.</div>
+ 
+ <?php
+	error_reporting(E_ALL);
+	ini_set("display_errors",0);
+	
+	$file =fopen("log_2.txt","w");	
+	$_SESSION['v'] =  $_SESSION['v'] + 1;
+	$count = $_SESSION['v'];
+	fwrite($file,$count);
+?>
+<?php
+include 'include.php';
+
+		
+
+$log = "User"; 
+logger($log);
+
+?>
+<div class="ref-banner">
+<a href="https://www.digitalocean.com/?refcode=33d018bc69d2&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
+</div>
+</body>
+</html>

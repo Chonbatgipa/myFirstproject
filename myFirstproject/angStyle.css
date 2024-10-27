@@ -1,0 +1,110 @@
+
+
+
+body{
+	 background-color:rgba(10,10,20,1);
+}
+h1{
+	background-color:rgba(20,20,20,1);
+	color:rgba(220,220,200,1);
+	margin-top:10px;
+	text-align:center;
+}
+
+h2{
+	
+	color:rgba(220,220,200,1);
+	margin-top:100px;
+	text-align:center;
+}
+.hamburger-menu input{
+	appearance:none;
+}
+/*   
+	 navigation bar style // start
+*/
+#navi{
+			background-color:rgba(100,150,50,1);
+			height:30px;
+			color:rgba(255,255,255,1);
+		}
+.dropdown{
+			float:left;
+			padding:5px 15px 10px 5px;
+			margin: 5px 35px 35px 30px;
+			background-color:rgba(100,150,50,1);
+			border-bottom-left-radius: 25%;
+			border-bottom-right-radius: 25%;
+		}
+.dropdown input{
+	display: none;
+	padding: 0;
+	margin: 0;
+}
+
+a{
+			text-align:center;
+			text-decoration:none;
+			color:rgba(255,255,255,1);
+		}
+.item{
+			background-color:rgba(100,150,50,1);
+			padding:5px 5px 5px 5px;
+			
+		}
+.dropdown-content{
+			display:none;
+		}
+
+.dropdown:hover .dropdown-content{
+			display:block;
+		}
+
+.item:hover{
+			color:rgba(15,15,0,1);
+		}
+/* 
+  navigation bar //end
+*/
+.container{
+	float:left;
+	position:relative;
+}
+#jakasi{
+	background-color:green;
+	width:100px;
+	height:50px;
+}
+#content{
+
+	background-color:rgba(0,10,20,1);
+}
+p{
+	color:rgba(220,220,200,1);
+	text-align:justify;
+	text-align:inter-word;
+	font-size:22px;
+	font-family:Heveltica (San-Serif);
+	padding-top:20px;
+	padding-left:10px;
+	padding-right:10px;
+}
+p:hover{
+	background-color:rgba(0,0,0,1);
+}
+
+#blank_content{
+	height:50px;
+}
+
+#copyrights{
+	text-align:center;
+	margin:auto;
+	background-color:rgba(100,200,200,1);
+}
+.font_style{
+	font-weight:bold;
+}
+.font_link{
+	color:rgba(200,100,250,1);
+}
