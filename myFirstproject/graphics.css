@@ -114,8 +114,10 @@
     left: calc(50% - 40px);
   }
 
+  .ref-banner{
+    position:absolute;
+    right:calc(20% - 50px);
+  }
 }
 
-.ref-banner{
-  bottom:calc(20% - 50px);
-}
+
